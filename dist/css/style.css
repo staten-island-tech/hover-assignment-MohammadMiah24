@@ -18,19 +18,22 @@ body {
 .gallery-child {
   height: 20rem;
   border-radius: 20rem;
-}
-
-.button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button {
   border: 0;
   line-height: 6;
   padding: 0 50px;
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: center;
   color: #fff;
   text-shadow: 1px 1px 1px #000;
@@ -38,6 +41,7 @@ body {
   background-color: #1014f0;
   background-image: -webkit-gradient(linear, right bottom, left top, from(rgba(0, 0, 0, 0.2)), color-stop(30%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
   background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  text-decoration: none;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
@@ -75,12 +79,22 @@ body {
 .hue {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .U {
   height: 20rem;
-  position: absolute;
-  left: 41%;
+  top: 110rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .pd6-photo:hover {
@@ -90,12 +104,6 @@ body {
   z-index: 2;
 }
 
-.gallery:hover .gallery-photo:not(:hover) {
-  -webkit-transform: scale(9.5);
-          transform: scale(9.5);
-  opacity: 0.3;
-}
-
 .button:hover {
   background-color: #1fe4eb;
 }
@@ -103,6 +111,14 @@ body {
 .button:active {
   -webkit-box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.U:hover {
+  -webkit-filter: hue-rotate(130deg);
+          filter: hue-rotate(130deg);
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  z-index: 2;
 }
 
 .all {
@@ -123,6 +139,7 @@ body {
           justify-content: center;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  top: 140rem;
 }
 
 .all:hover {
@@ -132,6 +149,8 @@ body {
   transition: all 1.3s ease-in;
   -webkit-transform: perspective(10000px) rotateX(0deg);
           transform: perspective(10000px) rotateX(0deg);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .all:hover .text {
@@ -157,7 +176,7 @@ body {
   border: 1px solid #fff;
   -webkit-box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
           box-shadow: 0 0 20px 5px rgba(100, 100, 255, 0.4);
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   -webkit-transition-delay: 1s;
@@ -166,15 +185,13 @@ body {
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: #58d;
+  background-color: #5683d1;
   cursor: pointer;
-  background-blend-mode: color-burn;
 }
 
 .left:hover, .center:hover, .right:hover, .lefter:hover, .righter:hover {
-  -webkit-box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
-          box-shadow: 0 0 30px 10px rgba(100, 100, 255, 0.6);
-  background-color: #ccf;
+  -webkit-box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.6);
+          box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.6);
 }
 
 .text {
@@ -189,6 +206,7 @@ body {
   will-change: transform;
   color: #fff;
   text-shadow: 0 0 5px rgba(100, 100, 255, 0.6);
+  font-size: 2rem;
 }
 
 .lefter {
@@ -217,21 +235,21 @@ body {
 .righter {
   -webkit-transform: translateX(60px) translateZ(-50px) rotateY(10deg);
           transform: translateX(60px) translateZ(-50px) rotateY(10deg);
-  background-image: url(https://thumbs.worthpoint.com/zoom/images2/1/0917/12/vintage-weird-balls-water-squirter_1_ca08b3145c9bbf564b09d5c17a0efa07.jpg);
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8g4_OwKayb0aw5dI_OAfCBCMnbldK4iHO3_eL8SqGyrggtD7t&s);
 }
 
 .explainer {
   font-weight: 300;
   font-size: 2rem;
-  color: #fff;
+  color: #35c7cc;
   -webkit-transition: all .6s ease;
   transition: all .6s ease;
   width: 100%;
   height: 100%;
   background-color: #303050;
-  background-image: radial-gradient(circle at center top, #cce, #33a);
+  background-image: radial-gradient(circle at center top, #0eaae7, #1523e4);
   border-radius: 10px;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 10px rgba(196, 151, 151, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,7 +271,7 @@ body {
   font-size: 16px;
   bottom: 10px;
   right: 10px;
-  color: #fff;
+  color: white;
   text-decoration: none;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 }
