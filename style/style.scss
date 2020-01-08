@@ -16,6 +16,21 @@ body {
   width: 40rem;
 }
 
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .gallery-child {
   height: 20rem;
   border-radius: 20rem;
@@ -35,6 +50,8 @@ body {
   text-shadow: 1px 1px 1px #000;
   border-radius: 10px;
   background-color: #1014f0;
+  animation-duration: 5s;
+  animation-name: bounceIn;
   background-image: linear-gradient(
     to top left,
     rgba(0, 0, 0, 0.2),
@@ -342,3 +359,4 @@ body {
     right: 0;    
   }
 }
+
